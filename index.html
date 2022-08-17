@@ -7,6 +7,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="dist/app.css">
+    <script src="dist/app.js"></script>
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -25,11 +26,16 @@
 <body>
 <header>
     <div class="title">
-        <h1>Social Media Dashboard</h1>
-        Total Followers: 23,004
+        <h1 class="color-heading">Social Media Dashboard</h1>
+        <strong class="color-gray">Total Followers: 23,004</strong>
     </div>
     <div class="mode-trigger">
-        Dark Mode
+        <strong class="color-gray">Dark Mode</strong>
+        <label class="switch">
+            <input type="checkbox" id="mode-switch">
+            <span class="slider round"></span>
+            <span style="visibility: hidden">Switch between dark and light mode</span>
+        </label>
     </div>
 </header>
 <main>
@@ -38,11 +44,11 @@
             <span class="card--facebook"></span>
             <div class="card__body">
                 <div class="card__user">
-                    <span class="icon icon__facebook"></span> <strong class="color-small">@nathanf</strong>
+                    <span class="icon icon__facebook"></span> <strong class="color-gray">@nathanf</strong>
                 </div>
                 <div class="card__stat">
                     <strong class="color-heading">1987</strong>
-                    <small class="text-normal color-small">Followers</small>
+                    <small class="text-normal color-gray">Followers</small>
                 </div>
                 <div class="card__difference">
                     <span class="icon icon__up"></span><strong class="rise">12 Today</strong>
@@ -54,11 +60,11 @@
             <span class="card--twitter"></span>
             <div class="card__body">
                 <div class="card__user">
-                    <span class="icon icon__twitter"></span><strong class="color-small">@nathanf</strong>
+                    <span class="icon icon__twitter"></span><strong class="color-gray">@nathanf</strong>
                 </div>
                 <div class="card__stat">
                     <strong class="color-heading">1044</strong>
-                    <small class="text-normal color-small">Followers</small>
+                    <small class="text-normal color-gray">Followers</small>
                 </div>
                 <div class="card__difference">
                     <span class="icon icon__up"></span><strong class="rise">99 Today</strong>
@@ -71,11 +77,11 @@
             <span class="card--instagram"></span>
             <div class="card__body">
                 <div class="card__user">
-                    <span class="icon icon__instagram"></span><strong class="color-small">@realnathanf</strong>
+                    <span class="icon icon__instagram"></span><strong class="color-gray">@realnathanf</strong>
                 </div>
                 <div class="card__stat">
                     <strong class="color-heading">11k</strong>
-                    <small class="text-normal color-small">Followers</small>
+                    <small class="text-normal color-gray">Followers</small>
                 </div>
                 <div class="card__difference">
                     <span class="icon icon__up"></span><strong class="rise">1099 Today</strong>
@@ -87,11 +93,11 @@
             <span class="card--youtube"></span>
             <div class="card__body">
                 <div class="card__user">
-                    <span class="icon icon__youtube"></span><strong class="color-small">@Nathan F.</strong>
+                    <span class="icon icon__youtube"></span><strong class="color-gray">@Nathan F.</strong>
                 </div>
                 <div class="card__stat">
                     <strong class="color-heading">8239</strong>
-                    <small class="text-normal color-small">Subscribers</small>
+                    <small class="text-normal color-gray">Subscribers</small>
                 </div>
                 <div class="card__difference">
                     <span class="icon icon__down"></span><strong class="fall">144 Today</strong>
@@ -101,49 +107,113 @@
 
     </section>
 
-    <section class="cards">
+    <section class="cards small">
         <div class="cards__title">
-            Overview - Today
+            <strong class="color-gray">Overview - Today</strong>
         </div>
-        <div class="card">Page Views
-            87
-            3%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Page Views</strong>
+                    <strong class="color-heading">87</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__facebook self-end"></span>
+                    <strong class="rise"><span class="icon icon__up"></span>3%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Likes
-            52
-            2%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Likes</strong>
+                    <strong class="color-heading">52</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__facebook self-end"></span>
+                    <strong class="fall"><span class="icon icon__down"></span>2%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Likes
-            5462
-            2257%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Likes</strong>
+                    <strong class="color-heading">5462</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__instagram self-end"></span>
+                    <strong class="rise"><span class="icon icon__up"></span>2257%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Profile Views
-            52k
-            1375%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Profile Views</strong>
+                    <strong class="color-heading">52k</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__instagram self-end"></span>
+                    <strong class="rise"><span class="icon icon__up"></span>1375%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Retweets
-            117
-            303%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Retweets</strong>
+                    <strong class="color-heading">117</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__twitter self-end"></span>
+                    <strong class="rise"><span class="icon icon__up"></span>303%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Likes
-            507
-            553%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Likes</strong>
+                    <strong class="color-heading">117</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__twitter self-end"></span>
+                    <strong class="rise"><span class="icon icon__up"></span>553%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Likes
-            107
-            19%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Likes</strong>
+                    <strong class="color-heading">107</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__youtube self-end"></span>
+                    <strong class="fall"><span class="icon icon__down"></span>19%</strong>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">Total Views
-            1407
-            12%
-        </div>
+        <section class="card">
+            <div class="card__body">
+                <div class="card__stat">
+                    <strong class="color-gray">Total Views</strong>
+                    <strong class="color-heading">1407</strong>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__youtube self-end"></span>
+                    <strong class="fall"><span class="icon icon__down"></span>12%</strong>
+                </div>
+            </div>
+        </section>
     </section>
 </main>
 <footer class="attribution">
