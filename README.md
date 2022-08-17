@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/vanilla-js-grid-layout-responsive-dashboard-with-darkmode-switch-7OdWwBPUDv](https://www.frontendmentor.io/solutions/vanilla-js-grid-layout-responsive-dashboard-with-darkmode-switch-7OdWwBPUDv)
 - Live Site URL: [https://thespiritcode.github.io/social-media-dashboard-with-theme-switcher/](https://thespiritcode.github.io/social-media-dashboard-with-theme-switcher/)
 
 ## My process

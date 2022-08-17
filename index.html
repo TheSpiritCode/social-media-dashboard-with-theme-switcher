@@ -30,17 +30,17 @@
         <strong class="color-gray">Total Followers: 23,004</strong>
     </div>
     <div class="mode-trigger">
-        <strong class="color-gray">Dark Mode</strong>
+        <strong class="color-gray" id="mode-switch-label">Dark Mode</strong>
         <label class="switch">
-            <input type="checkbox" id="mode-switch">
+            <input type="checkbox" id="mode-switch" aria-labelledby="mode-switch-label">
             <span class="slider round"></span>
             <span style="visibility: hidden">Switch between dark and light mode</span>
         </label>
     </div>
 </header>
 <main>
-    <section class="cards big">
-        <section class="card">
+    <section class="cards big" aria-label="Overall followers">
+        <section class="card" aria-label="Facebook followers">
             <span class="card--facebook"></span>
             <div class="card__body">
                 <div class="card__user">
@@ -56,7 +56,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Twitter followers">
             <span class="card--twitter"></span>
             <div class="card__body">
                 <div class="card__user">
@@ -73,7 +73,7 @@
         </section>
 
 
-        <section class="card">
+        <section class="card" aria-label="Instagram followers">
             <span class="card--instagram"></span>
             <div class="card__body">
                 <div class="card__user">
@@ -89,7 +89,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Youtube followers">
             <span class="card--youtube"></span>
             <div class="card__body">
                 <div class="card__user">
@@ -107,11 +107,11 @@
 
     </section>
 
-    <section class="cards small">
+    <section class="cards small" aria-label="Overview - Today">
         <div class="cards__title">
             <strong class="color-gray">Overview - Today</strong>
         </div>
-        <section class="card">
+        <section class="card" aria-label="Facebook page views">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Page Views</strong>
@@ -124,7 +124,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Facebook likes">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Likes</strong>
@@ -137,7 +137,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Instagram likes">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Likes</strong>
@@ -150,7 +150,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Instagram profile views">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Profile Views</strong>
@@ -163,7 +163,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Retweets">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Retweets</strong>
@@ -176,7 +176,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Twitter likes">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Likes</strong>
@@ -189,7 +189,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Youtube likes">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Likes</strong>
@@ -202,7 +202,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="card" aria-label="Youtube total views">
             <div class="card__body">
                 <div class="card__stat">
                     <strong class="color-gray">Total Views</strong>
