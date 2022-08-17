@@ -1,1 +1,147 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+:root {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
 
+body {
+  --body-bg: hsl(0deg, 0%, 100%);
+  --top-bg: hsl(225deg, 100%, 98%);
+  --card-bg: hsl(227deg, 47%, 96%);
+  --text-small: hsl(228deg, 12%, 44%);
+  --text-heading: hsl(230deg, 17%, 14%);
+  --toggle-bg: hsl(230deg, 22%, 74%);
+}
+body.dark-mode {
+  --body-bg: hsl(230deg, 17%, 14%);
+  --top-bg: hsl(232deg, 19%, 15%);
+  --card-bg: hsl(228deg, 28%, 20%);
+  --text-small: hsl(228deg, 34%, 66%);
+  --text-heading: hsl(0deg, 0%, 100%);
+  --toggle-bg: linear-gradient(hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+}
+.icon.icon__facebook {
+  background-image: url("../images/icon-facebook.svg");
+}
+.icon.icon__instagram {
+  background-image: url("../images/icon-instagram.svg");
+}
+.icon.icon__twitter {
+  background-image: url("../images/icon-twitter.svg");
+}
+.icon.icon__youtube {
+  background-image: url("../images/icon-youtube.svg");
+}
+.icon.icon__down, .icon.icon__up {
+  height: 10px;
+  width: 10px;
+  background-size: 10px;
+}
+.icon.icon__up {
+  background-image: url("../images/icon-up.svg");
+}
+.icon.icon__down {
+  background-image: url("../images/icon-down.svg");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--body-bg);
+}
+body small {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+body strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+body .rise {
+  color: hsl(163deg, 72%, 41%);
+}
+body .fall {
+  color: hsl(356deg, 69%, 56%);
+}
+body .color-small {
+  color: var(--text-small);
+}
+body .color-heading {
+  color: var(--text-heading);
+}
+body .cards {
+  display: grid;
+  gap: 1.5rem;
+}
+body .cards .card {
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  overflow: hidden;
+  align-items: center;
+}
+body .cards .card__body {
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  display: grid;
+  justify-items: center;
+}
+body .cards .card--facebook {
+  height: 4px;
+  width: 100%;
+  background: hsl(208deg, 92%, 53%);
+  display: block;
+}
+body .cards .card--twitter {
+  height: 4px;
+  width: 100%;
+  background: hsl(203deg, 89%, 53%);
+  display: block;
+}
+body .cards .card--youtube {
+  height: 4px;
+  width: 100%;
+  background: hsl(348deg, 97%, 39%);
+  display: block;
+}
+body .cards .card--instagram {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+  display: block;
+}
+body .cards .card__user {
+  display: inline-grid;
+  place-items: center;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+body .cards .card__stat {
+  display: grid;
+  grid-auto-flow: row;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+body .cards .card__stat strong {
+  font-size: 4rem;
+}
+body .cards .card__stat small {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+body .cards .card__difference {
+  gap: 0.3rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}

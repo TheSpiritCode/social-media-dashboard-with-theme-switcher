@@ -1,0 +1,183 @@
+@import "variables";
+
+:root {
+  font-size: $font-size;
+  font-family: $font-family;
+
+}
+
+body {
+  --body-bg: #{$light-body-bg};
+  --top-bg: #{$light-top-bg};
+  --card-bg: #{$light-card-bg};
+  --text-small: #{$light-text-small};
+  --text-heading: #{$light-text-heading};
+  --toggle-bg: #{$light-toggle-bg};
+
+  &.dark-mode {
+    --body-bg: #{$dark-body-bg};
+    --top-bg: #{$dark-top-bg};
+    --card-bg: #{$dark-card-bg};
+    --text-small: #{$dark-text-small};
+    --text-heading: #{$dark-text-heading};
+    --toggle-bg: #{$dark-toggle-bg};
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+
+  background-size: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
+
+  &.icon__facebook {
+    background-image: url("../images/icon-facebook.svg");
+  }
+
+  &.icon__instagram {
+    background-image: url("../images/icon-instagram.svg");
+  }
+
+  &.icon__twitter {
+    background-image: url("../images/icon-twitter.svg");
+  }
+
+  &.icon__youtube {
+    background-image: url("../images/icon-youtube.svg");
+  }
+
+  &.icon__down,
+  &.icon__up {
+    height: 10px;
+    width: 10px;
+
+    background-size: 10px;
+
+  }
+
+  &.icon__up {
+    background-image: url("../images/icon-up.svg");
+  }
+
+  &.icon__down {
+    background-image: url("../images/icon-down.svg");
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  background-color: var(--body-bg);
+
+  small {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  strong {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .rise {
+    color: $lime-green;
+  }
+
+  .fall {
+    color: $bright-red;
+  }
+
+  .color-small {
+    color: var(--text-small);
+  }
+
+  .color-heading {
+    color: var(--text-heading);
+  }
+
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+
+    .card {
+      border-radius: 5px;
+      background-color: var(--card-bg);
+      overflow: hidden;
+      align-items: center;
+
+      &__body {
+        padding-top: 1.9rem;
+        padding-bottom: 1.9rem;
+        display: grid;
+        justify-items: center;
+      }
+
+      &--facebook {
+        height: 4px;
+        width: 100%;
+        background: $facebook;
+        display: block;
+      }
+
+      &--twitter {
+        height: 4px;
+        width: 100%;
+        background: $twitter;
+        display: block;
+      }
+
+      &--youtube {
+        height: 4px;
+        width: 100%;
+        background: $you-tube;
+        display: block;
+      }
+
+      &--instagram {
+        height: 4px;
+        width: 100%;
+        background: $instagram;
+        display: block;
+      }
+
+      &__user {
+        display: inline-grid;
+        place-items: center;
+        grid-auto-flow: column;
+        gap: 0.5rem;
+      }
+
+      &__stat {
+        display: grid;
+        grid-auto-flow: row;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+        strong {
+          font-size: 4rem;
+        }
+
+        small {
+          text-transform: uppercase;
+          letter-spacing: 0.4rem;
+        }
+
+      }
+
+      &__difference {
+        gap: 0.3rem;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+      }
+    }
+  }
+
+
+}

@@ -1,87 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="dist/app.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 <body>
+<header>
+    <div class="title">
+        <h1>Social Media Dashboard</h1>
+        Total Followers: 23,004
+    </div>
+    <div class="mode-trigger">
+        Dark Mode
+    </div>
+</header>
+<main>
+    <section class="cards big">
+        <section class="card">
+            <span class="card--facebook"></span>
+            <div class="card__body">
+                <div class="card__user">
+                    <span class="icon icon__facebook"></span> <strong class="color-small">@nathanf</strong>
+                </div>
+                <div class="card__stat">
+                    <strong class="color-heading">1987</strong>
+                    <small class="text-normal color-small">Followers</small>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__up"></span><strong class="rise">12 Today</strong>
+                </div>
+            </div>
+        </section>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <section class="card">
+            <span class="card--twitter"></span>
+            <div class="card__body">
+                <div class="card__user">
+                    <span class="icon icon__twitter"></span><strong class="color-small">@nathanf</strong>
+                </div>
+                <div class="card__stat">
+                    <strong class="color-heading">1044</strong>
+                    <small class="text-normal color-small">Followers</small>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__up"></span><strong class="rise">99 Today</strong>
+                </div>
+            </div>
+        </section>
 
 
+        <section class="card">
+            <span class="card--instagram"></span>
+            <div class="card__body">
+                <div class="card__user">
+                    <span class="icon icon__instagram"></span><strong class="color-small">@realnathanf</strong>
+                </div>
+                <div class="card__stat">
+                    <strong class="color-heading">11k</strong>
+                    <small class="text-normal color-small">Followers</small>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__up"></span><strong class="rise">1099 Today</strong>
+                </div>
+            </div>
+        </section>
 
-  Overview - Today
+        <section class="card">
+            <span class="card--youtube"></span>
+            <div class="card__body">
+                <div class="card__user">
+                    <span class="icon icon__youtube"></span><strong class="color-small">@Nathan F.</strong>
+                </div>
+                <div class="card__stat">
+                    <strong class="color-heading">8239</strong>
+                    <small class="text-normal color-small">Subscribers</small>
+                </div>
+                <div class="card__difference">
+                    <span class="icon icon__down"></span><strong class="fall">144 Today</strong>
+                </div>
+            </div>
+        </section>
 
-  Page Views
-  87
-  3%
+    </section>
 
-  Likes
-  52
-  2%
+    <section class="cards">
+        <div class="cards__title">
+            Overview - Today
+        </div>
+        <div class="card">Page Views
+            87
+            3%
+        </div>
 
-  Likes
-  5462
-  2257%
+        <div class="card">Likes
+            52
+            2%
+        </div>
 
-  Profile Views
-  52k
-  1375%
+        <div class="card">Likes
+            5462
+            2257%
+        </div>
 
-  Retweets
-  117
-  303%
+        <div class="card">Profile Views
+            52k
+            1375%
+        </div>
 
-  Likes
-  507
-  553%
+        <div class="card">Retweets
+            117
+            303%
+        </div>
 
-  Likes
-  107
-  19%
+        <div class="card">Likes
+            507
+            553%
+        </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        <div class="card">Likes
+            107
+            19%
+        </div>
+
+        <div class="card">Total Views
+            1407
+            12%
+        </div>
+    </section>
+</main>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</footer>
 </body>
 </html>
